@@ -1,7 +1,13 @@
 <template>
   <div id="login">
+    <!-- Images for Login page -->
+    <img id="logo" src="@/assets/images/AirPAWS_Official_Logo.png" alt="AirPAWS Logo" />
+    <img id="airplane" src="@/assets/images/paper_airplane_login.png" alt="Airplane Background" />
+    <img id="cat" src="@/assets/images/cat_right_login2.png" alt="Cat" />
+    <img id="dog" src="@/assets/images/dog_left_login.png" alt="Dog" />
+
     <form v-on:submit.prevent="login">
-      <h1 >Please Sign In</h1>
+      <h1>Please Sign In</h1>
       <div role="alert" v-if="invalidCredentials">
         Invalid username and password!
       </div>
@@ -18,13 +24,15 @@
       </div>
       <button type="submit">Sign in</button>
       <p>
-      <router-link v-bind:to="{ name: 'register' }">Need an account? Sign up.</router-link></p>
+        <router-link v-bind:to="{ name: 'register' }">Need an account? Sign up.</router-link>
+      </p>
     </form>
   </div>
 </template>
 
 <script>
 import authService from "../services/AuthService";
+import "@/assets/login.css";
 
 export default {
   components: {},
@@ -64,6 +72,7 @@ export default {
 .form-input-group {
   margin-bottom: 1rem;
 }
+
 label {
   margin-right: 0.5rem;
 }

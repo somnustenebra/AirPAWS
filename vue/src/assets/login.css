@@ -1,0 +1,100 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll if elements are slightly off-screen */
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#d8a96b, #e8cda1, #f3e2cd, #f7f3eb);
+    background-size: cover;
+
+}
+
+/* Logo styling */
+#logo {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    z-index: 2;
+}
+
+
+/* Airplane full-page background */
+#airplane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Cat at bottom-right */
+#cat {
+    position: fixed;
+    bottom: 0;
+    right: -75px;
+	height: 250px;
+    width: auto;
+    z-index: 2;
+}
+
+/* Dog at bottom-left */
+#dog {
+    position: fixed;
+    bottom: 0px;
+    left: 5px;
+	height: 250px;
+    width: auto; 
+    z-index: 2;
+}
+
+/* Login form styling */
+form {
+    position: relative;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form h1 {
+    margin-bottom: 20px;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #3b82f6;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #2563eb;
+}
+
+form {
+    margin-top: 67px; /* Move form towards the bottom */
+}
