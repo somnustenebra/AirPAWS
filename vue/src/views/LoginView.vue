@@ -1,10 +1,17 @@
 <template>
   <div id="login">
     <!-- Images for Login page -->
+    <!-- <img id='paper-plane' src="@/assets/images/paper_plane.gif" alt="Paper Plane"> -->
     <img id="logo" src="@/assets/images/AirPAWS_Official_Logo.png" alt="AirPAWS Logo" />
     <img id="airplane" src="@/assets/images/paper_airplane_login.png" alt="Airplane Background" />
     <img id="cat" src="@/assets/images/cat_right_login2.png" alt="Cat" />
     <img id="dog" src="@/assets/images/dog_left_login.png" alt="Dog" />
+
+    <div id="flavor-text">
+      <h1>Welcome to AirPAWS!
+        <p>Where furry companions <br> are always welcomed!</p>
+      </h1>
+    </div>
 
     <form v-on:submit.prevent="login">
       <h1>Please Sign In</h1>
@@ -27,6 +34,7 @@
         <router-link v-bind:to="{ name: 'register' }">Need an account? Sign up.</router-link>
       </p>
     </form>
+
   </div>
 </template>
 

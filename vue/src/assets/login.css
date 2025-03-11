@@ -69,6 +69,22 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+#flavor-text{
+    font-family: "Comic Sans MS", "Comic Sans MS5", "cursive";
+    position: absolute;
+    top: 100px; 
+    left: 40px; 
+    z-index: 3;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#flavor-text p {
+    fcaont-family: "Comic Sans MS", "Comic Sans MS5", "cursive";
+    text-align: center;
+
+}
+
 form h1 {
     margin-bottom: 20px;
 }
@@ -98,3 +114,4 @@ form button:hover {
 form {
     margin-top: 67px; /* Move form towards the bottom */
 }
+
